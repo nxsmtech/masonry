@@ -1,9 +1,11 @@
 <?php
 
+use App\Block;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class DummyDataSeeder extends Seeder
 {
+
     /**
      * Seed the application's database.
      *
@@ -11,6 +13,8 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         $this->call(DummyDataSeeder::class);
+        for ($i = 0; $i < 1000; $i++) {
+            factory(Block::class, 1000)->create();
+        }
     }
 }
