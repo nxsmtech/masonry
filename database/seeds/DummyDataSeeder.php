@@ -13,8 +13,8 @@ class DummyDataSeeder extends Seeder
      */
     public function run()
     {
-        for ($i = 0; $i < 1000; $i++) {
-            factory(Block::class, 1000)->create();
+        for ($i = 0; $i < 2000; $i++) {
+            factory(Block::class, 500)->create();
         }
     }
 }
