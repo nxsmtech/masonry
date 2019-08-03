@@ -22,9 +22,11 @@ class CreateBlocksTable extends Migration
             $table->timestamps();
         });
 
-        Artisan::call('db:seed', [
-            '--class' => DummyDataSeeder::class
-        ]);
+        if (!app()->runningUnitTests()) {
+            Artisan::call('db:seed', [
+                '--class' => DummyDataSeeder::class
+            ]);
+        }
     }
 
     /**
