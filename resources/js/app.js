@@ -5,6 +5,7 @@
  */
 
 require('./bootstrap');
+require('masonry-layout');
 
 window.Vue = require('vue');
 
