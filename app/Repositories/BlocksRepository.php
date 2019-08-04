@@ -8,7 +8,7 @@ class BlocksRepository
 {
     public function blocks($amount)
     {
-        $blocks = Block::orderBy('created_at')->orderBy('rand_num')->paginate($amount);
+        $blocks = Block::orderBy('rand_num', 'asc')->orderBy('created_at', 'asc')->paginate($amount);
         return $blocks;
     }
 }
