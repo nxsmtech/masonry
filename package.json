@@ -26,6 +26,8 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "infinite-scroll": "^3.0.6",
     "masonry-layout": "^4.2.2"
   }
 }

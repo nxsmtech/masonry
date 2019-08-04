@@ -1,15 +1,15 @@
 @extends ('layouts.app')
 
 @section ('content')
-    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
+    <div class="grid lg:flex lg:flex-wrap -mx-3">
         @foreach($blocks as $block)
-            <div class="grid-item grid-item--width2">
-                <div class="card"
-                     style="height: {{ $block->rand_height . 'px' }}; background-color: {{ $block->color }}">
-                    <div class="text-grey-darkest">{{ $block->rand_num }}</div>
-                </div>
+            <div class="grid-item grid-item--width2 lg:w-1/3 p-2">
+                @include('blocks.card')
             </div>
         @endforeach
     </div>
-@endsection
 
+    <div hidden>
+        {{ $blocks->links() }}
+    </div>
+@endsection
