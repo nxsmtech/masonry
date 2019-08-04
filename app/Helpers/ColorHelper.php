@@ -9,7 +9,7 @@ class ColorHelper
     {
         foreach ($blocks as $block) {
             if (empty($block->color)) {
-                $block->color = sprintf('#%06X', mt_rand(0, 0xFFFFFF));
+                $block->color = $block->setColor();
                 $block->save();
             }
         }

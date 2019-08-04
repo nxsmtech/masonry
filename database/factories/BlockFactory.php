@@ -8,5 +8,6 @@ $factory->define(Block::class, function (Faker $faker) {
     return [
         'rand_num' => $faker->numberBetween($min = 1, $max = 5000),
         'rand_height' => $faker->numberBetween($min = 100, $max = 200),
+        'color' => null
     ];
 });
