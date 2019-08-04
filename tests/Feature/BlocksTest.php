@@ -13,9 +13,10 @@ class BlocksTest extends TestCase
     use WithFaker, RefreshDatabase;
 
     public function a_user_can_view_blocks() {
+
         $this->withoutExceptionHandling();
         $block = factory('App\Block')->create();
         $this->get('/blocks')->assertStatus(200);
-        $this->get('/blocks')->assertSee($block->rand_num);
+        $this->get('/blocks')->assertSee($block->color);
     }
 }

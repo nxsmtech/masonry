@@ -15,4 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/blocks', 'BlockController@index');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/blocks', 'BlockController@index');
+
+    Route::get('/home', 'HomeController@index')->name('home');
+});
+
+Auth::routes();
+
