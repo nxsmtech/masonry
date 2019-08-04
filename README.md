@@ -53,7 +53,7 @@ and run :
 php artisan migrate
 ```
 This will launch migration and database seed, that creates "blocks" table and fills it with 1 million rows. 
-This will take around 5 min. "Blocks" table is filled with random number (1-5000) for rand_num column and random number (100-200) for rand_height column
+This will take around 5 min. "Blocks" table is filled with random number (1-5000) for rand_num column and random number (100-200) for rand_height column.
 This data will be used to display blocks in view. 
 
 After this you hit serve and see the result in your browser
