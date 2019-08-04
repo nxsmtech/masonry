@@ -11,15 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/blocks', 'BlockController@index');
-
-    Route::get('/home', 'HomeController@index')->name('home');
-});
+Route::get('/', 'BlockController@index');
 
 Auth::routes();
 

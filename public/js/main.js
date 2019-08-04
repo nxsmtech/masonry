@@ -4115,7 +4115,7 @@ InfiniteScroll.imagesLoaded = imagesLoaded; // init Infinite Scroll
 
 var infScroll = new InfiniteScroll('.grid', {
   debug: true,
-  path: '/blocks?page={{#}}',
+  path: '/?page={{#}}',
   append: '.grid-item',
   outlayer: msnry
 });
