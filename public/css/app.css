@@ -6211,14 +6211,6 @@ table {
  * @import "utilities/skew-transforms";
  */
 
-.grid-item {
-  width: 200px;
-}
-
-.grid-item--width2 {
-  width: 400px;
-}
-
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;

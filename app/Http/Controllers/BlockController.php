@@ -27,6 +27,7 @@ class BlockController extends Controller
     {
         $result = $this->repository->blocks(30);
         $blocks = $this->color->color($result);
+
         return view('blocks.index', compact('blocks'));
     }
 }

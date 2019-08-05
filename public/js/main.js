@@ -4130,7 +4130,7 @@ var infScroll = new InfiniteScroll('.grid', {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\My Projects\masonry\resources\js\main.js */"./resources/js/main.js");
+module.exports = __webpack_require__(/*! C:\My Projectz\masonry\resources\js\main.js */"./resources/js/main.js");
 
 
 /***/ })
