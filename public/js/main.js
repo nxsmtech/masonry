@@ -4107,19 +4107,22 @@ var InfiniteScroll = __webpack_require__(/*! infinite-scroll */ "./node_modules/
 
 var imagesLoaded = __webpack_require__(/*! imagesloaded */ "./node_modules/imagesloaded/imagesloaded.js");
 
-var msnry = new Masonry('.grid', {
-  // Masonry options...
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer'
-});
-InfiniteScroll.imagesLoaded = imagesLoaded; // init Infinite Scroll
+$(function () {
+  var msnry = new Masonry('.grid', {
+    // Masonry options...
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
+  InfiniteScroll.imagesLoaded = imagesLoaded; // init Infinite Scroll
 
-var infScroll = new InfiniteScroll('.grid', {
-  debug: true,
-  history: false,
-  path: '/?page={{#}}',
-  append: '.grid-item',
-  outlayer: msnry
+  var infScroll = new InfiniteScroll('.grid', {
+    debug: true,
+    history: false,
+    path: '/?page={{#}}',
+    append: '.grid-item',
+    outlayer: msnry
+  });
 });
 
 /***/ }),
