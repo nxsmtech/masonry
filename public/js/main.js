@@ -4109,7 +4109,8 @@ var imagesLoaded = __webpack_require__(/*! imagesloaded */ "./node_modules/image
 
 var msnry = new Masonry('.grid', {
   // Masonry options...
-  itemSelector: '.grid-item'
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-sizer'
 });
 InfiniteScroll.imagesLoaded = imagesLoaded; // init Infinite Scroll
 

@@ -5,6 +5,7 @@ var imagesLoaded = require('imagesloaded');
 var msnry = new Masonry( '.grid', {
     // Masonry options...
     itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
 });
 
 InfiniteScroll.imagesLoaded = imagesLoaded;
